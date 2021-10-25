@@ -109,8 +109,13 @@ header .nav a:hover{
   background: #f8f8fe;
   border-radius: 5px;
   text-align: center;
+  transition:  all .4s;
+  border-bottom:1px solid greenyellow; 
 }
-
+.heading span{
+  border-bottom: 1.5px solid greenyellow;
+  border-radius: 100%;
+}
 .prevent .box img {
   margin-bottom: 10px;
   height: 70px;
@@ -125,17 +130,102 @@ header .nav a:hover{
   color: var(--black);
   font-size: 14px;
 }
-.
+.box:hover{
+  transform: scale(1.05);
+  overflow: hidden;
+  border: 1.5px solid greenyellow;
+  background: #42445A;
+}
+.box:hover h3{
+  color: #fcfcfc;
+}
+
+
+.experts .box{
+  width: 260px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow:  var(--box-shadow);
+  margin:  10px;
+  padding: 5px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all .3s;
+}
+
+.experts .box img{
+  background: #f8f8f8;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.experts .box h3{
+  font-size: 22px;
+  margin: 2px 0;
+  color: var(--black);
+}
+.experts .box span{
+  font-size: 15px;
+  color: var(--main-color);
+}
+
+.experts .box .share{
+  position: absolute;
+  top: 5px;right: -50px;
+  transition: all .2s;
+}
+
+.experts .box .share a{
+  border-radius: 5px;
+  background: var(--main-color);
+  color: white;
+  display: block;
+  height: 40px;
+  width: 40px;lline-height: 40px;
+  margin-top: 5px;
+  padding-top: 13px;
+}
+
+.experts .box:hover .share{
+  right: 15px;
+}
+
+.experts .box .share a:hover{
+  background: var(--black);
+}
+
+.contact from{
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+
+
+.contact from.box,
+.contact from textarea{
+  border-radius: 5px;
+  font-size: 17px;
+  padding: 10px;width: 100%;
+  margin: 7px ;
+  text-decoration: none;
+  
+}
+
+
+
 
 
           /* media quries 768px  */
  
 
 @media (max-width:991px){
-  
+ 
+}
 .home .content h3{
   font-size: 30px;
-}
+
   
 }
 @media (max-width:768px){
